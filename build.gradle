@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id "io.qameta.allure" version "2.11.2"//added plugin
+}
+
+group = 'com.gmail.kat9.rud'
+version = '1.0-SNAPSHOT'
+
+allure { //plugin config
+    version.set("2.24.0")
+    adapter { //collect test results into a json format, make build/allure-results directory, processing @Step annotations
+        aspectjWeaver.set(true)
+        frameworks {
+            junit5 { //framework name
+                adapterVersion.set("2.24.0") //framework & allure integration version
+            }
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation (
+            'org.junit.jupiter:junit-jupiter:5.10.1',
+            'com.codeborne:selenide:7.0.2',
+            'io.qameta.allure:allure-selenide:2.24.0' //3. allure integration with selenide
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
