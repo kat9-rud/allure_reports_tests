@@ -1,0 +1,18 @@
+name: Test
+
+on: [push]
+jobs:
+  test:
+    #where to run
+    runs-on: ubuntu-latest
+    #steps to be done
+    steps:
+      #download repository
+      - uses: actions/checkout@v4
+        #java setup
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+      #run tests
+      - run: ./gradlew clean test
