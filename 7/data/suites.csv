@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Nov 20 14:20:47 GMT 2023","Mon Nov 20 14:20:49 GMT 2023","1988","","com.gmail.kat9.rud.allure.StepsTest","","com.gmail.kat9.rud.allure.StepsTest","testAnnotatedStep","@Step annotation approach",""
+"passed","Mon Nov 20 14:20:41 GMT 2023","Mon Nov 20 14:20:47 GMT 2023","5714","","com.gmail.kat9.rud.allure.SelenideTest","","com.gmail.kat9.rud.allure.SelenideTest","testIssueName","Clean Selenide with Listener approach",""
+"passed","Mon Nov 20 14:20:49 GMT 2023","Mon Nov 20 14:20:50 GMT 2023","1708","","com.gmail.kat9.rud.allure.StepsTest","","com.gmail.kat9.rud.allure.StepsTest","testLambdaStep","Lambda steps approach",""
